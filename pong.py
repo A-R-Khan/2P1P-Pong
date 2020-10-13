@@ -16,7 +16,7 @@ class players(pygame.sprite.Sprite):
         self.rect.y=10
 
     def move(self,dist):
-        self.rect.y+=dist if 0 <= dist <= 600 else 0
+        self.rect.y+=dist if 0 <= self.rect.y <= 600 else 0
 
     @staticmethod
     def checkkeys():
